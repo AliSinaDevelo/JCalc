@@ -29,7 +29,7 @@ JCalc is a simple calculator web application built as part of The Odin Project's
 
 3. Open index.html in your web browser.
 
-##Usage
+## Usage
 
     Enter the first number into the calculator's display using the number buttons.
     Select the desired operation (+, -, *, /) using the corresponding buttons.
@@ -37,7 +37,7 @@ JCalc is a simple calculator web application built as part of The Odin Project's
     Press the "=" button to perform the calculation and display the result.
     To perform another calculation, repeat steps 1-4.
 
-##Roadmap
+## Roadmap
 
 Here are some potential future features and improvements for JCalc:
 
@@ -46,7 +46,7 @@ Here are some potential future features and improvements for JCalc:
     Keyboard support for input and control.
     History feature to store and display past calculations.
 
-##Contributing
+## Contributing
 
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue on the JCalc GitHub repository.
 

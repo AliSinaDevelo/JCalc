@@ -1,12 +1,3 @@
-function displayErrorMessage(message) {
-    const display = document.getElementById('display');
-    display.value = message;
-
-    setTimeout(() => {
-      display.value = '';
-    }, 2000);
-}
-
 function add(a, b) {
     return a + b;
 }
@@ -101,3 +92,9 @@ document.getElementById('clear').addEventListener('click', () => {
   operator = null;
   clearDisplay();
 });
+
+function displayErrorMessage(message) {
+    document.getElementById('display').value = message;
+    setTimeout(clearDisplay, 2000);
+}
+  

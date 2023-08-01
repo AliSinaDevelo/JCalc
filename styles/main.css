@@ -8,13 +8,20 @@ body {
     margin: 0;
 }
 
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 350px;
+}
+
 .display {
+    grid-column: span 4;
     background-color: #444;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 350px;
     padding: 20px;
-    text-align: center;
+    text-align: right;
 }
 
 #display {
@@ -59,15 +66,15 @@ button:active {
 .clear {
     background-color: #ff3d00;
 }
-  
+
 .operator {
     background-color: #007bff;
 }
-  
+
 .backspace {
     background-color: #333;
 }
-  
+
 .number {
     background-color: #888;
 }

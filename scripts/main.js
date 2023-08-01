@@ -43,3 +43,15 @@ function operate(operator, a, b) {
     }
 }
 
+let displayValue = '';
+
+function updateDisplay(value) {
+  displayValue += value;
+  document.getElementById('display').value = displayValue;
+}
+
+function clearDisplay() {
+  displayValue = '';
+  document.getElementById('display').value = '';
+}
+

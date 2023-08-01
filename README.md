@@ -31,20 +31,20 @@ JCalc is a simple calculator web application built as part of The Odin Project's
 
 ## Usage
 
-    Enter the first number into the calculator's display using the number buttons.
-    Select the desired operation (+, -, *, /) using the corresponding buttons.
-    Enter the second number using the number buttons.
-    Press the "=" button to perform the calculation and display the result.
-    To perform another calculation, repeat steps 1-4.
+Enter the first number into the calculator's display using the number buttons.
+Select the desired operation (+, -, *, /) using the corresponding buttons.
+Enter the second number using the number buttons.
+Press the "=" button to perform the calculation and display the result.
+To perform another calculation, repeat steps 1-4.
 
 ## Roadmap
 
 Here are some potential future features and improvements for JCalc:
 
-    Support for more complex operations (exponents, square root, etc.).
-    Enhanced user interface and styling.
-    Keyboard support for input and control.
-    History feature to store and display past calculations.
+Support for more complex operations (exponents, square root, etc.).
+Enhanced user interface and styling.
+Keyboard support for input and control.
+History feature to store and display past calculations.
 
 ## Contributing
 

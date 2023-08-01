@@ -49,6 +49,7 @@ function clearDisplay() {
 let firstNumber = null;
 let operator = null;
 
+
 document.querySelectorAll('.number').forEach(button => {
     button.addEventListener('click', () => {
         updateDisplay(button.textContent);
@@ -83,7 +84,6 @@ document.getElementById('equals').addEventListener('click', () => {
             firstNumber = result;
             operator = null;
         }
-        clearDisplay();
     }
 });
 
@@ -92,6 +92,7 @@ document.getElementById('clear').addEventListener('click', () => {
     operator = null;
     clearDisplay();
 });
+
 
 function displayErrorMessage(message) {
     document.getElementById('display').value = message;

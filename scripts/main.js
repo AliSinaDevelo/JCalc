@@ -55,3 +55,49 @@ function clearDisplay() {
   document.getElementById('display').value = '';
 }
 
+let firstNumber = null;
+let operator = null;
+
+document.querySelectorAll('.number').forEach(button => {
+  button.addEventListener('click', () => {
+    updateDisplay(button.textContent);
+  });
+});
+
+document.querySelectorAll('.operator').forEach(button => {
+  button.addEventListener('click', () => {
+    if (firstNumber === null) {
+      firstNumber = parseFloat(displayValue);
+      operator = button.textContent;
+      clearDisplay();
+    } else {
+      const secondNumber = parseFloat(displayValue);
+      const result = operate(operator, firstNumber, secondNumber);
+      if (result !== null) {
+        firstNumber = result;
+        operator = button.textContent;
+        document.getElementById('display').value = result;
+      }
+      clearDisplay();
+    }
+  });
+});
+
+document.getElementById('equals').addEventListener('click', () => {
+  if (firstNumber !== null && operator !== null) {
+    const secondNumber = parseFloat(displayValue);
+    const result = operate(operator, firstNumber, secondNumber);
+    if (result !== null) {
+      document.getElementById('display').value = result;
+      firstNumber = result;
+      operator = null;
+    }
+    clearDisplay();
+  }
+});
+
+document.getElementById('clear').addEventListener('click', () => {
+  firstNumber = null;
+  operator = null;
+  clearDisplay();
+});

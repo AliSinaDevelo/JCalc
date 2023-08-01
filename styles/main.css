@@ -52,3 +52,22 @@ button:active {
     background-color: #444;
 }
 
+.equals {
+    grid-column: span 2;
+}
+
+.clear {
+    background-color: #ff3d00;
+}
+  
+.operator {
+    background-color: #007bff;
+}
+  
+.backspace {
+    background-color: #333;
+}
+  
+.number {
+    background-color: #888;
+}
